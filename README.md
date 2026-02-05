@@ -25,11 +25,12 @@ To verify the solution, open three separate terminals.
 **Terminal 1 (Server):**
 ```bash
 python server.py --port 12001 --output received_relay.jpg
-
-**Terminal 1 (Server):**
+```
+**Terminal 2 (Network Relay):**
 ```bash
 python relay.py --bind_port 12000 --server_port 12001 --loss 0.3 --reorder 0.2
-
-**Terminal 1 (Server):**
+```
+**Terminal 3 (Client):**
 ```bash
 python client.py --target_port 12000 --file old_lady.jpg
+```
